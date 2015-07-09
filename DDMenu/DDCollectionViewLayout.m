@@ -46,7 +46,7 @@
     CGFloat contentHeight = 0.0;        // Used to determine the contentSize
     
     // Set number of items for each row
-    NSUInteger numberOfColumnsInRow = 3;
+    NSUInteger numberOfColumnsInRow = [self.collectionView numberOfItemsInSection:0];
     
     // Loop through all items and calculate the UICollectionViewLayoutAttributes for each one
     NSUInteger numberOfItems = [self.collectionView numberOfItemsInSection:0];

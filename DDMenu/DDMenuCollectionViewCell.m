@@ -27,7 +27,6 @@
         
         float spaceBelowImage = frame.size.height - (_imageView.frame.origin.y + _imageView.frame.size.height);
         float imageBottomY = (_imageView.frame.origin.y + _imageView.frame.size.height);
-        NSLog(@"%f", spaceBelowImage);
         float xOffset = 5;
         float yOffset = 2;
         _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(xOffset, imageBottomY+yOffset, frame.size.width-(xOffset*2), spaceBelowImage*0.5)];

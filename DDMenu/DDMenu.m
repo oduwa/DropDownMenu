@@ -113,6 +113,8 @@ NSInteger const STARTINDEX                    = 0;
     self.headerImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, self.height/2)];
     self.headerImageView.image = [UIImage imageNamed:@"tape"];
     self.headerImageView.backgroundColor = [UIColor lightGrayColor];
+    self.headerImageView.layer.masksToBounds = YES;
+    self.headerImageView.contentMode = UIViewContentModeScaleAspectFill;
     [self addSubview:_headerImageView];
     
     self.profileImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, _headerImageView.frame.size.height/2, _headerImageView.frame.size.height/2)];
