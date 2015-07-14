@@ -45,34 +45,6 @@ _menu = [[DDMenu alloc] initWithItems:@[item1, item2, item3] textColor:[UIColor 
 
 ## Customization ##
 
-At the moment, the following features can be customized:
-
-* @property(nonatomic)CGFloat height
-
-* @property(nonatomic, strong)UIColor *textColor
-
-* @property(nonatomic, strong)UIFont  *titleFont
-
-* @property(nonatomic, strong)UIColor *highLightTextColor
-
-* @property(nonatomic, assign)BOOL hidesBorder
-
-* @property(nonatomic, assign)float borderWidth
-
-* @property(nonatomic, strong)UIColor *borderColor;
-
-* @property(nonatomic, strong)UIColor *selectedMenuItemColour:- set if you want to tint the selected icon a different colour from the remaining menu items' icons.
-
-* @property(nonatomic, strong)UIImageView *headerImageView:- Image View for the header. Has all the customizability of any other UIImageView.
-
-* @property(nonatomic, strong)UIImageView *profileImageView:- Image View for the profile picture. Has all the customizability of any other UIImageView.
-
-* @property(nonatomic, strong)UILabel *profileLabel:- Text Label for the text beneath the profile picture. Has all the customizability of any other UILabel.
-
-* @property(nonatomic, strong)UIImageView *topRightUtilityView:- Image View for the cog at the top right. Has all the customizability of any other UIImageView. The image defaults to a gear cog to be used for a "settings" section but can be changed to whatever other image you want.
-
-* @property(nonatomic, copy) void (^topRightUtilityButtonBlock)(UIView *utilityView):- Block where you can specify what happens when the top right utility button (gear cog) is pressed.
-
 An example of a DDMenu with some customization is shown below:
 
 ```objective-c
@@ -94,6 +66,67 @@ _menu.topRightUtilityButtonBlock = ^(UIView *topRightView){
         
 };
 ```
+
+At the moment, the following features can be customized:
+
+```objective-c
+@property(nonatomic)CGFloat height
+```
+
+```objective-c
+@property(nonatomic, strong)UIColor *textColor
+```
+
+```objective-c
+@property(nonatomic, strong)UIFont  *titleFont
+```
+
+```objective-c
+@property(nonatomic, strong)UIColor *highLightTextColor
+```
+
+```objective-c
+@property(nonatomic, assign)BOOL hidesBorder
+```
+
+```objective-c
+@property(nonatomic, assign)float borderWidth
+```
+
+```objective-c
+@property(nonatomic, strong)UIColor *borderColor
+```
+
+```objective-c
+@property(nonatomic, strong)UIColor *selectedMenuItemColour
+```
+set if you want to tint the selected icon a different colour from the remaining menu items' icons.
+
+```objective-c
+@property(nonatomic, strong)UIImageView *headerImageView
+```
+Image View for the header. Has all the customizability of any other UIImageView.
+
+```objective-c
+@property(nonatomic, strong)UIImageView *profileImageView
+```
+Image View for the profile picture. Has all the customizability of any other UIImageView.
+
+```objective-c
+@property(nonatomic, strong)UILabel *profileLabel
+```
+Text Label for the text beneath the profile picture. Has all the customizability of any other UILabel.
+
+```objective-c
+@property(nonatomic, strong)UIImageView *topRightUtilityView
+```
+Image View for the cog at the top right. Has all the customizability of any other UIImageView. The image defaults to a gear cog to be used for a "settings" section but can be changed to whatever other image you want.
+
+```objective-c
+@property(nonatomic, copy) void (^topRightUtilityButtonBlock)(UIView *utilityView)
+```
+Block where you can specify what happens when the top right utility button (gear cog) is pressed.
+
 
 
 
