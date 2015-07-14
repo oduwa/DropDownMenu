@@ -105,22 +105,22 @@ set if you want to tint the selected icon a different colour from the remaining 
 ```objective-c
 @property(nonatomic, strong)UIImageView *headerImageView
 ```
-Image View for the header. Has all the customizability of any other UIImageView.
+Image View for the header. Has all the customizability of any other *UIImageView*.
 
 ```objective-c
 @property(nonatomic, strong)UIImageView *profileImageView
 ```
-Image View for the profile picture. Has all the customizability of any other UIImageView.
+Image View for the profile picture. Has all the customizability of any other *UIImageView*.
 
 ```objective-c
 @property(nonatomic, strong)UILabel *profileLabel
 ```
-Text Label for the text beneath the profile picture. Has all the customizability of any other UILabel.
+Text Label for the text beneath the profile picture. Has all the customizability of any other *UILabel*.
 
 ```objective-c
 @property(nonatomic, strong)UIImageView *topRightUtilityView
 ```
-Image View for the cog at the top right. Has all the customizability of any other UIImageView. The image defaults to a gear cog to be used for a "settings" section but can be changed to whatever other image you want.
+Image View for the cog at the top right. Has all the customizability of any other *UIImageView*. The image defaults to a gear cog to be used for a "settings" section but can be changed to whatever other image you want.
 
 ```objective-c
 @property(nonatomic, copy) void (^topRightUtilityButtonBlock)(UIView *utilityView)
