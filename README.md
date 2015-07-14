@@ -127,7 +127,17 @@ Image View for the cog at the top right. Has all the customizability of any othe
 ```
 Block where you can specify what happens when the top right utility button (gear cog) is pressed.
 
+## Compatability ##
 
+Tested and working on iOS 7.0+
+(NOTE: Landscape mode is a bit dodgy on iOS 7 but should be fine on iOS 8)
+
+## Credits ##
+
+Inspired by Roshan Nindrai's [RBMenu](https://github.com/RoshanNindrai/RBMenu).
+
+
+That's all folks!
 
 
 
