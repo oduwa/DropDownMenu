@@ -4,6 +4,8 @@ Animated drop down menu written in Objective-C
 
 ![Screenshot](https://github.com/oduwa/DropDownMenu/blob/master/phonescreen.png)
 
+**Please ★ this library if you like it!*
+
 ##Installation##
 
 I haven't setup a pod for this project yet so for now, to install it just drag and drop the *DDMenu* folder into your XCode project. Pretty simple huh!
